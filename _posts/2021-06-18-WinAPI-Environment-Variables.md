@@ -8,8 +8,6 @@ math: false
 mermaid: false
 ---
 
-# Let's Play with the Windows Environment Variables
-
 In this blog, we are going to have a look at two functions that lets us manipulate the Environment Variables of our Windows Machine.
 There are only two functions that are related to Environment Variables in Windows API but I found them useful and fascinating.
 The functions that we are going to use in this blog are `GetEnvironmentVariable` and `SetEnvironmentVariable`.
