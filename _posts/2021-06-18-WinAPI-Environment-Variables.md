@@ -32,7 +32,7 @@ There are two types of Environment Variables:
 
 ## User Environment Variables and System Environment Variables
 
-As you might already know, you can have different users on same Windows machine. So, the User Environment Variables are specific to a single user for which they were made, and System Environment Variables are same for every user on they same System / Machine.
+As you might already know, you can have different users on same Windows machine. So, the User Environment Variables are specific to a single user for which they were made, and System Environment Variables are same for every user on the same System / Machine.
 
 The user Environment Variables are stored in the Windows Registry at the path `HKEY_CURRENT_USER\Environment` and the location of System Environment Variables in the Windows registry is `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`.
 
