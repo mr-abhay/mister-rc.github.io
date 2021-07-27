@@ -63,7 +63,7 @@ DWORD GetEnvironmentVariable(
 
 Don't get scared by the `DWORD` return type, it's defined as `typedef unsigned __LONG32 DWORD;` in the `winmindef.h`, which means it'll just return an integer.
 
-The first parameter of this function is `lpName`. The type of this parameter is `LPCSTR`, this is also defined in the same file as a pointer to a null terminated list of characters.
+The first parameter of this function is `lpName`. The type of this parameter is `LPCSTR`.
 
 This parameter is used to specify the name of the Environment Variable whose value we want to use in our Program.
 
