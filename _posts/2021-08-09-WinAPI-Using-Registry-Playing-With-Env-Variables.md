@@ -1,7 +1,7 @@
 ---
 title: Windows API - Let's use the register to change our Environment!
 author: Mr. Rc
-date: 2021-08-05 00:00:00 +0800
+date: 2021-08-05 11:33:00 +0800
 categories: [Programming, Windows, Windows Internals, WinAPI, Windows Registry]
 tags: [Windows, Windows API Series, Windows Registry]
 math: false
@@ -24,7 +24,7 @@ You can understand them from the following example:
 
 In our case, the path of the registry key where the User Environment Variables are stored is `HKEY_CURRENT_USER\Environment`. Here `HKEY_CURRENT_USER` is the Key, `Environment` is the `Sub Key` and all the Environment Variables inside the registry `Key` are the `Values`.
 
-![Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/registry.png](Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/registry.png)
+![Images/registry_example.png](Images/registry_example.png)
 
 If you want to learn about Windows Registry, you can read some stuff here: 
 
@@ -133,7 +133,7 @@ The fourth parameter is `dwFlags`. This parameter is used to pass the data type 
 
 This are the available options for this parameteter:
 
-![Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/type_of_registry_keys.png](Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/type_of_registry_keys.png)
+![Images/type_of_registry_keys.png](Images/type_of_registry_keys.png)
 
 The fifth parameter is `pdwType`. This parameter is used to pass a pointer to a variable which will get the data type of the data stored in the `Value` that we are accessing. This parameter is mostly used for verifying the data type that the function returned. We can just ignore the use of this function by passing `NULL` as an argument to this function.
 
@@ -251,11 +251,11 @@ Here is the output of the program where I gave `works` as the Variable name and 
 
 (Using a screenshot from [carbon.now.sh](http://carbon.now.sh) for better representation)
 
-![Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/carbon.png](Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/carbon.png)
+![Images/reg_environment.png](Images/reg_environment.png)
 
 Now, Let's check the Environment Variable by searching "edit environment variable" in the Windows search and opening the application to see if there is a Environment Variable named `works`.
 
-![Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/variable.png](Windows%20API%20-%20Let's%20use%20the%20register%20to%20change%20our%20c5d7be1e53f741dfb82d9908c3448abe/variable.png)
+![Images/env_variables.png](Images/env_variables.png)
 
 Perfect!, It works as expected :D
 
