@@ -1,7 +1,7 @@
 ---
 title: Windows API - Let's use the register to change our Environment!
 author: Mr. Rc
-date: 2021-08-05 11:33:00 +0800
+date: 2021-08-05 00:00:00 +0800
 categories: [Programming, Windows, Windows Internals, WinAPI, Windows Registry]
 tags: [Windows, Windows API Series, Windows Registry]
 math: false
